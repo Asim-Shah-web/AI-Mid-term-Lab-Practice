@@ -1,0 +1,47 @@
+# ---------- Virtual environments ----------
+myenv/
+.venv/
+venv/
+env/
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# ---------- Jupyter ----------
+.ipynb_checkpoints/
+
+# ---------- Large datasets (download separately, see README) ----------
+# Intel Image Classification, wherever it was unzipped
+ASSIGNMENT02/archive/
+ASSIGNMENT02/archive*/
+**/seg_train/
+**/seg_test/
+**/seg_pred/
+*.zip
+*.tar
+*.tar.gz
+*.h5
+*.npy
+*.npz
+
+# ---------- Old versions ----------
+Archive_v1/
+
+# ---------- Editors / OS ----------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+
+# ---------- Secrets ----------
+.env
+kaggle.json
+
+# Note: *.joblib, metrics.json and the small CSV datasets are kept on purpose,
+# because the deployed app needs them. GitHub rejects files over 100 MB; if the
+# model grows that large, add "*.joblib" here and host the model elsewhere.
